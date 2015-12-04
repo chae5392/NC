@@ -49,7 +49,7 @@ public class foodDbJson extends AsyncTask<String,Void,Void> {
                         item.title = "오늘은 기념일이 아니거나";
                         item.category = "";
                         item.imageUrl = "http://222.116.135.76:8080/Noon/images/noon.png";
-                        item.address = "No Address";
+                        item.address = "(X) add ress";
                         item.phone = "주변에 해당하는 음식점이 없습니다.";
                         if (itemList.size() == 0) {
 
@@ -86,7 +86,7 @@ public class foodDbJson extends AsyncTask<String,Void,Void> {
             }else {
                 Item item = new Item();
                 item.title = "오늘은 기념일이 아니거나";
-                item.category = " ";
+                item.category = "";
                 item.imageUrl = "http://222.116.135.76:8080/Noon/images/noon.png";
                 item.address = "(X)address";
                 item.phone = "주변에 해당하는 음식점이 없습니다.";
@@ -119,9 +119,7 @@ public class foodDbJson extends AsyncTask<String,Void,Void> {
                             item.phone = "추천할만한";
                             MainActivity.ThemaItem.set(3, item);
                         }else{
-
                             MainActivity.ThemaItem.set(3, itemList.get(0));
-
                         }
                     }
 

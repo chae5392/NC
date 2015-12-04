@@ -96,7 +96,6 @@ public class GetFood extends BroadcastReceiver {
         this.context = context;
 
         if(intent.getAction().equals("ACTION.GET.ONE")){
-            Log.i("aaaa","OOOOOOOOOOOOOOOOOOOOONNNNNNNNNNNNNNNNEEEEEEEE");
             staticMerge.what = "아침";
             getItem(intent,"0",staticMerge.what,1);
         }
